@@ -12,5 +12,6 @@ package com.toolsteam.Helloproject;
 public class Hello {
     public static void main(String[] args){
     System.out.println("Hello, this is java gradle project");
+    System.out.println("for jenkins");
     }
 }
