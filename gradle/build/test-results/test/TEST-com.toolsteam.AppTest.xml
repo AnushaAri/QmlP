@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.toolsteam.AppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-04-02T08:56:19" hostname="anusha" time="0.049">
+  <properties/>
+  <testcase name="testAppHasAGreeting" classname="com.toolsteam.AppTest" time="0.049"/>
+  <system-out><![CDATA[Testing
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
