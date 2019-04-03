@@ -34,28 +34,7 @@ dependencies {
        toolVersion = "0.8.2"
    }
 
-   jacocoTestCoverageVerification {
-       violationRules {
-           rule {
-		element = 'BUNDLE' 
-                   limit {
-                   	counter = 'INSTRUCTION'
-                        value = 'COVEREDRATIO'
- 			 minimum = 0.7
-               }
-           }
-         
-           rule {
-               element = 'CLASS'
-                  limit {
-                     counter = 'LINE'
-                     value = 'COVEREDRATIO'
-                     minimum = 0.7
-                }
-           }
-
-       }
-   }
+   
 
 }
 
@@ -63,3 +42,45 @@ dependencies {
 mainClassName = 'com.toolsteam.App'
 
 test.finalizedBy jacocoTestReport
+
+   jacocoTestCoverageVerification {
+       violationRules {
+           rule {
+                   limit {
+                   	counter = 'INSTRUCTION'
+                        value = 'COVEREDRATIO'
+ 			minimum = 0.5
+                   }
+         
+                   limit {
+                     counter = 'CLASS'
+		     value = 'COVEREDRATIO'
+                     minimum = 0.5
+                   }
+
+		   limit {
+		     counter = 'METHOD'
+                     value = 'COVEREDRATIO'
+                     minimum = 0.5
+                   }
+
+                   limit {
+                     counter = 'COMPLEXITY'
+                     value = 'COVEREDRATIO'
+                     minimum = 0.5
+                   }
+
+                   limit {
+                     counter = 'BRANCH'
+                     value = 'COVEREDRATIO'
+                     minimum = 0.5
+                   }
+
+                   limit {
+                     counter = 'LINE'
+                     value = 'COVEREDRATIO'
+                     minimum = 0.5
+                   }
+           }    
+       }
+   }
