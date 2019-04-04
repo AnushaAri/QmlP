@@ -15,6 +15,10 @@ plugins {
 
     //  Apply the JaCoCo plugin to add support for java
     id 'jacoco'
+
+    id 'pmd'
+
+    id 'findbugs'
 }
 
 repositories {
@@ -84,3 +88,20 @@ test.finalizedBy jacocoTestReport
            }    
        }
    }
+
+
+findbugs  {
+	findbugsTest.enabled=false
+}
+
+tasks.withType(FindBugs) {
+    reports {	
+	xml.enabled=false
+	html.enabled=true
+    }
+}
+
+pmd  {
+	pmdTest.enabled=false
+}
+
